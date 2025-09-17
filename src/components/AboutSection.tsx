@@ -28,62 +28,50 @@ export default function AboutSection() {
           <div className="space-y-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-janda-cyan rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold">J</span>
+                <div className="w-8 h-8 flex items-center justify-center">
+                  <img 
+                    src="/img/logoBlanco.png" 
+                    alt="EstudIA Logo" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
-                <span className="text-2xl font-bold">EstudIA</span>
+                <span className="text-2xl font-bold text-janda-cyan">EstudIA</span>
               </div>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
                 ¿Sobre la APP?
               </h2>
             </div>
 
             <div className="space-y-6 text-lg leading-relaxed">
-              <p className="font-semibold">
+              <p className="font-semibold text-janda-yellow text-xl">
                 Mucho más que un cuaderno digital. Su compañero de estudio.
               </p>
               
-              <p>
+              <p className="text-gray-200">
                 El Cuaderno Digital EstudIA con Inteligencia Artificial es la evolución del estudio. 
                 Combinando la practicidad de la escritura tradicional con el poder de la tecnología, 
                 transforma sus notas en un entorno interactivo e inteligente.
               </p>
 
-              <p>
-                <strong>Organiza tus ideas, accede a información relevante, revisa el contenido 
+              <p className="text-gray-200">
+                <strong className="text-janda-cyan">Organiza tus ideas, accede a información relevante, revisa el contenido 
                 de manera eficiente y personaliza tu aprendizaje según tus necesidades.</strong>
               </p>
 
-              <p>
+              <p className="text-gray-200">
                 Con EstudIA, el futuro del estudio está al alcance de tu mano, abriendo un mundo de 
                 posibilidades para mejorar tus conocimientos y alcanzar tus metas académicas. Todo de 
-                forma rápida e inteligente. Notas perfectas, resultados brillantes.
+                forma rápida e inteligente. <span className="text-janda-yellow font-semibold">Notas perfectas, resultados brillantes.</span>
               </p>
             </div>
 
             {/* App Store Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
               <Link href="#" className="inline-block">
-                <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors">
-                  <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                    <span className="text-black text-sm font-bold">▶</span>
-                  </div>
-                  <div className="text-sm">
-                    <div className="text-gray-300">DISPONÍVEL NO</div>
-                    <div className="font-semibold text-white">Google Play</div>
-                  </div>
-                </div>
+                <img src="/img/Play Store.svg" alt="Disponible en Google Play" className="h-14 hover:opacity-80 transition-opacity" />
               </Link>
               <Link href="#" className="inline-block">
-                <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors">
-                  <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                    <span className="text-black text-sm font-bold">🍎</span>
-                  </div>
-                  <div className="text-sm">
-                    <div className="text-gray-300">Disponível na</div>
-                    <div className="font-semibold text-white">App Store</div>
-                  </div>
-                </div>
+                <img src="/img/App Store.svg" alt="Disponible en App Store" className="h-14 hover:opacity-80 transition-opacity" />
               </Link>
             </div>
           </div>

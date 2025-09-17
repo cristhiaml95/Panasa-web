@@ -1,8 +1,11 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
 
 export default function ProductsAndPricingSection() {
+  const [isAnnual, setIsAnnual] = useState(false)
+
   const notebooks = [
     {
       id: 1,
@@ -60,21 +63,16 @@ export default function ProductsAndPricingSection() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left Content - Phone Mockup */}
+            {/* Left Content - Quiz Video */}
             <div className="relative">
-              <div className="bg-black rounded-[3rem] p-6 mx-auto w-80 h-[600px] relative">
-                <div className="bg-gray-800 rounded-[2.5rem] w-full h-full relative flex flex-col">
-                  <div className="flex-1 flex items-center justify-center">
-                    <div className="text-center text-white space-y-4">
-                      <div className="w-16 h-16 bg-janda-cyan rounded-full mx-auto flex items-center justify-center">
-                        <span className="text-white text-2xl">📝</span>
-                      </div>
-                      <p className="text-lg font-semibold">Quiz</p>
-                      <p className="text-sm">Gerando os seus Quizzes</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <video
+                src="/videos/Quiz.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-80 h-[600px] mx-auto object-contain"
+              />
             </div>
 
             {/* Right Content */}
@@ -91,28 +89,12 @@ export default function ProductsAndPricingSection() {
               </div>
               
               {/* App Store Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#" className="inline-block">
-                  <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors">
-                    <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                      <span className="text-black text-sm font-bold">▶</span>
-                    </div>
-                    <div className="text-sm text-white">
-                      <div className="text-gray-300">DISPONÍVEL NO</div>
-                      <div className="font-semibold">Google Play</div>
-                    </div>
-                  </div>
+                  <img src="/img/Play Store.svg" alt="Disponible en Google Play" className="h-14 hover:opacity-80 transition-opacity" />
                 </a>
                 <a href="#" className="inline-block">
-                  <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors">
-                    <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                      <span className="text-black text-sm font-bold">🍎</span>
-                    </div>
-                    <div className="text-sm text-white">
-                      <div className="text-gray-300">Disponível na</div>
-                      <div className="font-semibold">App Store</div>
-                    </div>
-                  </div>
+                  <img src="/img/App Store.svg" alt="Disponible en App Store" className="h-14 hover:opacity-80 transition-opacity" />
                 </a>
               </div>
             </div>
@@ -124,10 +106,10 @@ export default function ProductsAndPricingSection() {
       <section id="buy-notebooks" className="py-20 bg-janda-yellow">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-janda-navy mb-6">
               DÓNDE COMPRAR
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
               Con el Cuaderno Digital EstudIA, tus notas se convierten en 
               un poderoso recurso de aprendizaje, accesible en cualquier 
               momento y en cualquier lugar.
@@ -156,26 +138,10 @@ export default function ProductsAndPricingSection() {
           {/* App Store Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#" className="inline-block">
-              <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors">
-                <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-black text-sm font-bold">▶</span>
-                </div>
-                <div className="text-sm text-white">
-                  <div className="text-gray-300">DISPONÍVEL NO</div>
-                  <div className="font-semibold">Google Play</div>
-                </div>
-              </div>
+              <img src="/img/Play Store.svg" alt="Disponible en Google Play" className="h-14 hover:opacity-80 transition-opacity" />
             </a>
             <a href="#" className="inline-block">
-              <div className="bg-black rounded-lg px-6 py-3 flex items-center space-x-3 hover:bg-gray-800 transition-colors">
-                <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-                  <span className="text-black text-sm font-bold">🍎</span>
-                </div>
-                <div className="text-sm text-white">
-                  <div className="text-gray-300">Disponível na</div>
-                  <div className="font-semibold">App Store</div>
-                </div>
-              </div>
+              <img src="/img/App Store.svg" alt="Disponible en App Store" className="h-14 hover:opacity-80 transition-opacity" />
             </a>
           </div>
         </div>
@@ -185,21 +151,35 @@ export default function ProductsAndPricingSection() {
       <section id="plans" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-janda-navy mb-6">
               Anotar, escribir y crear 
               con EstudIA
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Aprovecha estas funciones en la aplicación EstudIA
             </p>
             
             {/* Plan Toggle */}
             <div className="flex justify-center mb-12">
               <div className="bg-gray-100 rounded-full p-1 flex">
-                <button className="bg-janda-cyan text-white px-6 py-2 rounded-full font-semibold">
+                <button 
+                  onClick={() => setIsAnnual(false)}
+                  className={`px-6 py-2 rounded-full font-semibold transition-colors ${
+                    !isAnnual 
+                      ? 'bg-janda-cyan text-white' 
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
                   Mensual
                 </button>
-                <button className="text-gray-600 px-6 py-2 rounded-full font-semibold">
+                <button 
+                  onClick={() => setIsAnnual(true)}
+                  className={`px-6 py-2 rounded-full font-semibold transition-colors ${
+                    isAnnual 
+                      ? 'bg-janda-cyan text-white' 
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
                   Anual
                 </button>
               </div>
@@ -212,44 +192,44 @@ export default function ProductsAndPricingSection() {
             <div className="bg-gray-50 rounded-3xl p-8 relative">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">EstudIA VERSIÓN GRATUITA</h3>
-                <div className="text-4xl font-bold text-gray-900 mb-4">R$ 0,00<span className="text-lg text-gray-600">/mes</span></div>
+                <div className="text-4xl font-bold text-gray-900 mb-4">
+                  S/ 0.00
+                  <span className="text-lg text-gray-600">/mes</span>
+                </div>
                 <p className="text-gray-600 mb-6">
-                  ¡Durante toda la experiencia, todo el tiempo que quieras!<br />
-                  Acceso a la aplicación en las principales funcionalidades de forma simplificada.
+                  ¡Siempre gratis! Acceso a las funcionalidades principales de forma simplificada.
                 </p>
                 <button className="w-full bg-white text-gray-900 border-2 border-gray-300 py-3 px-6 rounded-full font-semibold hover:bg-gray-50 transition-colors">
-                  SUSCRIBIRSE AL PLAN
+                  COMENZAR GRATIS
                 </button>
               </div>
 
               <div className="space-y-4">
-                <h4 className="font-semibold text-gray-900 mb-4">Características principales</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">Características incluidas:</h4>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Creación de un cuaderno digital con índice y artículos.</span>
+                    <span className="text-gray-700">Cuaderno digital básico con índice</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">
-                      Lector de texto con sistema OCR (Reconocimiento Óptico de Caracteres) desde escritura a mano hasta escritura digital.
-                    </span>
+                    <span className="text-gray-700">OCR básico para reconocimiento de texto</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Tutor con IA generativa para explicar, traducir, generar contenido, resumir y reformular.</span>
+                    <span className="text-gray-700">Tutor IA básico (5 consultas/día)</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Interacción con AIA y tutor con IA generativa.</span>
+                    <span className="text-gray-700">Sincronización básica en la nube</span>
                   </div>
                 </div>
               </div>
@@ -262,71 +242,84 @@ export default function ProductsAndPricingSection() {
               </div>
               
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Cena individual mensual</h3>
-                <div className="text-4xl font-bold text-gray-900 mb-4">R$ 7,90 <span className="text-lg text-gray-600">por mes</span></div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">EstudIA PREMIUM</h3>
+                <div className="text-4xl font-bold text-gray-900 mb-4">
+                  {isAnnual ? (
+                    <>
+                      S/ 19.90
+                      <span className="text-lg text-gray-600">/mes</span>
+                      <div className="text-sm text-green-600 font-medium">
+                        S/ 238.80/año (¡Ahorra 25%!)
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      S/ 26.90
+                      <span className="text-lg text-gray-600">/mes</span>
+                    </>
+                  )}
+                </div>
                 <p className="text-gray-600 mb-6">
-                  Facturado mes a mes.<br />
-                  Acceso completo a la aplicación.
+                  {isAnnual 
+                    ? "Facturado anualmente. Acceso completo con descuento."
+                    : "Facturado mensualmente. Acceso completo a todas las funciones."
+                  }
                 </p>
                 <button className="w-full bg-janda-cyan text-white py-3 px-6 rounded-full font-semibold hover:bg-cyan-600 transition-colors">
-                  SUSCRIBIRSE AL PLAN
+                  SUSCRIBIRSE AHORA
                 </button>
               </div>
 
               <div className="space-y-4">
-                <h4 className="font-semibold text-gray-900 mb-4">Acceso completo a la aplicación.</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">Todo lo del plan gratuito, más:</h4>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Creación de un cuaderno digital con índice y artículos.</span>
+                    <span className="text-gray-700">Tutor IA ilimitado con explicaciones avanzadas</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">
-                      Lector de texto con sistema OCR (Reconocimiento Óptico de Caracteres) desde escritura a mano hasta escritura digital.
-                    </span>
+                    <span className="text-gray-700">Resolución de problemas matemáticos y científicos</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">
-                      Resolución y tutorización de problemas matemáticos, físicos o químicos con el sistema OCR (Reconocimiento Óptico de Caracteres).
-                    </span>
+                    <span className="text-gray-700">Generación automática de cuestionarios</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Tutor con IA generativa para explicar, traducir, generar contenido, resumir y reformular.</span>
+                    <span className="text-gray-700">Tarjetas de estudio interactivas</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Cuestionarios increíbles</span>
+                    <span className="text-gray-700">Conversión de voz a texto y texto a voz</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Tarjetas interactivas</span>
+                    <span className="text-gray-700">Sincronización avanzada en múltiples dispositivos</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Voz a texto.</span>
+                    <span className="text-gray-700">Soporte prioritario 24/7</span>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
+                    <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center mt-0.5 flex-shrink-0">
                       <span className="text-white text-xs">✓</span>
                     </div>
-                    <span className="text-gray-700">Texto a voz.</span>
+                    <span className="text-gray-700">Acceso anticipado a nuevas funcionalidades</span>
                   </div>
                 </div>
               </div>

@@ -19,11 +19,11 @@ const faqData: FAQItem[] = [
   },
   {
     question: "¿Es gratis?",
-  answer: "EstudIA ofrece una versión gratuita con funcionalidades básicas. También hay un plan premium con características avanzadas por R$ 7,90 al mes."
+  answer: "EstudIA ofrece una versión gratuita con funcionalidades básicas. También hay un plan premium con características avanzadas desde S/ 19.90 al mes (plan anual) o S/ 26.90 al mes (plan mensual)."
   },
   {
     question: "¿Cuál es el valor?",
-  answer: "El plan premium de EstudIA cuesta R$ 7,90 por mes y incluye acceso completo a todas las funcionalidades de la aplicación."
+  answer: "El plan premium de EstudIA cuesta S/ 26.90 por mes (facturado mensualmente) o S/ 19.90 por mes (facturado anualmente con 25% de descuento). Incluye acceso completo a todas las funcionalidades de la aplicación."
   },
   {
     question: "¿Necesitas internet para usarlo?",
@@ -55,10 +55,10 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="py-20 bg-white">
+    <section id="faq" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl lg:text-5xl font-bold text-janda-navy mb-8">
             Preguntas más frecuentes
           </h2>
         </div>

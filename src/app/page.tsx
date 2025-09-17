@@ -6,6 +6,7 @@ import FeaturesSection from '@/components/FeaturesSection'
 import ProductsAndPricingSection from '@/components/ProductsAndPricingSection'
 import FAQSection from '@/components/FAQSection'
 import CallToActionAndFooter from '@/components/CallToActionAndFooter'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <ProductsAndPricingSection />
       <FAQSection />
       <CallToActionAndFooter />
+      <ScrollToTop />
     </main>
   )
 }
