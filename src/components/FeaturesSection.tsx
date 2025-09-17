@@ -32,14 +32,14 @@ export default function FeaturesSection() {
 
             {/* Right Content - Phone Mockup */}
             <div className="relative">
-              <div className="w-80 h-[600px] flex flex-col items-center justify-center">
+              <div className="w-80 h-[600px] flex flex-col items-center justify-center video-fade-up video-float">
                   <video
                     src="/videos/Scanner.mp4"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-contain rounded-3xl"
+                    className="w-full h-full object-contain rounded-3xl transition-all duration-700 hover:scale-110 hover:rotate-1 hover:shadow-2xl hover:shadow-janda-orange/30"
                     style={{ background: 'transparent' }}
                   />
               </div>
@@ -54,14 +54,17 @@ export default function FeaturesSection() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content - MapaMental Video */}
             <div className="relative">
-              <video
-                src="/videos/MapaMental.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-80 h-[600px] mx-auto object-contain"
-              />
+              <div className="video-fade-up video-breath">
+                <video
+                  src="/videos/MapaMental.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-80 h-[600px] mx-auto object-contain transition-all duration-500 hover:scale-105 hover:drop-shadow-2xl"
+                  style={{ animationDelay: '0.3s' }}
+                />
+              </div>
             </div>
 
             {/* Right Content */}
@@ -100,14 +103,17 @@ export default function FeaturesSection() {
           <div className="flex justify-center">
             {/* Speech2Text Video */}
             <div className="relative">
-              <video
-                src="/videos/speech2textfinal.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-80 h-[600px] object-contain"
-              />
+              <div className="video-fade-up video-rotate">
+                <video
+                  src="/videos/speech2textfinal.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-80 h-[600px] object-contain transition-all duration-700 hover:scale-110 hover:-rotate-2 hover:shadow-2xl hover:shadow-janda-yellow/40"
+                  style={{ animationDelay: '0.4s' }}
+                />
+              </div>
             </div>
           </div>
         </div>

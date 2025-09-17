@@ -56,27 +56,27 @@ export default function HowItWorksSection() {
           {/* Left Content - Phone Mockups */}
           <div className="flex justify-center space-x-8">
             {/* Video Flashcards */}
-            <div className="w-80 h-[600px] flex flex-col items-center justify-center">
+            <div className="w-80 h-[600px] flex flex-col items-center justify-center video-fade-up video-rotate">
               <video
                 src="/videos/Flashcards.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-contain rounded-2xl"
+                className="w-full h-full object-contain rounded-2xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-janda-cyan/20"
                 style={{ background: 'transparent' }}
               />
             </div>
 
             {/* Cyan Phone */}
-            <div className="w-80 h-[600px] flex flex-col items-center justify-center">
+            <div className="w-80 h-[600px] flex flex-col items-center justify-center video-fade-up video-breath" style={{ animationDelay: '0.2s' }}>
               <video
                 src="/videos/LoginScreen.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-full object-contain rounded-3xl"
+                className="w-full h-full object-contain rounded-3xl transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-janda-navy/20"
                 style={{ background: 'transparent' }}
               />
             </div>

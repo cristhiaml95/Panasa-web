@@ -13,14 +13,22 @@
               </p>
             </div>
             <div className="flex justify-center">
-              <video
-                src="/videos/splash2.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-80 h-[600px] object-contain"
-              />
+              <div className="relative video-float video-pulse-glow">
+                {/* Background blur container that matches the gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-janda-cyan/30 to-janda-navy/30 rounded-3xl blur-sm transform scale-105"></div>
+                
+                {/* Video container with subtle background */}
+                <div className="relative bg-white/5 rounded-3xl p-4 backdrop-blur-sm border border-white/10 video-shimmer">
+                  <video
+                    src="/videos/splash2.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-80 h-[600px] object-contain rounded-2xl transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
