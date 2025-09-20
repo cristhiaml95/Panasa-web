@@ -5,6 +5,7 @@ import AboutSection from '@/components/AboutSection'
 import HowItWorksSection from '@/components/HowItWorksSection'
 import FeaturesSection from '@/components/FeaturesSection'
 import ProductsAndPricingSection from '@/components/ProductsAndPricingSection'
+import PartnersSection from '@/components/PartnersSection'
 import FAQSection from '@/components/FAQSection'
 import CallToActionAndFooter from '@/components/CallToActionAndFooter'
 import ScrollToTop from '@/components/ScrollToTop'
@@ -25,6 +26,7 @@ export default function Home() {
       <HowItWorksSection />
       <FeaturesSection />
       <ProductsAndPricingSection />
+      <PartnersSection />
       <FAQSection />
       <CallToActionAndFooter />
       <ScrollToTop />

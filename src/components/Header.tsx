@@ -36,17 +36,17 @@ export default function Header() {
             </Link>
             <Link href="#know-aia" className="group">
               <span className="inline-block px-3 py-1 rounded-full bg-janda-navy/80 text-white font-poppins text-xs md:text-sm font-semibold shadow-md transition-all duration-200 group-hover:bg-janda-yellow group-hover:text-janda-navy group-hover:scale-105 group-hover:shadow-lg tracking-wide text-center">
-                Conoce a AIA
-              </span>
-            </Link>
-            <Link href="#buy-notebooks" className="group">
-              <span className="inline-block px-3 py-1 rounded-full bg-janda-navy/80 text-white font-poppins text-xs md:text-sm font-semibold shadow-md transition-all duration-200 group-hover:bg-janda-yellow group-hover:text-janda-navy group-hover:scale-105 group-hover:shadow-lg tracking-wide text-center">
-                Comprar cuadernos
+                Conoce EstudIA
               </span>
             </Link>
             <Link href="#plans" className="group">
               <span className="inline-block px-3 py-1 rounded-full bg-janda-navy/80 text-white font-poppins text-xs md:text-sm font-semibold shadow-md transition-all duration-200 group-hover:bg-janda-yellow group-hover:text-janda-navy group-hover:scale-105 group-hover:shadow-lg tracking-wide text-center">
                 Planes
+              </span>
+            </Link>
+            <Link href="#partners" className="group">
+              <span className="inline-block px-3 py-1 rounded-full bg-janda-navy/80 text-white font-poppins text-xs md:text-sm font-semibold shadow-md transition-all duration-200 group-hover:bg-janda-yellow group-hover:text-janda-navy group-hover:scale-105 group-hover:shadow-lg tracking-wide text-center">
+                ¿Dónde encontrarnos?
               </span>
             </Link>
             <Link href="#faq" className="group">
@@ -106,13 +106,13 @@ export default function Header() {
               CÓMO FUNCIONA
             </Link>
             <Link href="#know-aia" className="hover:text-janda-yellow transition-colors text-white">
-              CONOCE A AIA
-            </Link>
-            <Link href="#buy-notebooks" className="hover:text-janda-yellow transition-colors text-white">
-              COMPRAR CUADERNOS
+              CONOCE ESTUDIA
             </Link>
             <Link href="#plans" className="hover:text-janda-yellow transition-colors text-white">
               PLANES
+            </Link>
+            <Link href="#partners" className="hover:text-janda-yellow transition-colors text-white">
+              ¿DÓNDE ENCONTRARNOS?
             </Link>
             <Link href="#faq" className="hover:text-janda-yellow transition-colors text-white">
               FAQ

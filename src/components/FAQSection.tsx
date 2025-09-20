@@ -10,36 +10,20 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-  question: "¿Qué es EstudIA?",
-  answer: "EstudIA es un cuaderno digital inteligente que combina la escritura tradicional con inteligencia artificial para crear una experiencia de estudio revolucionaria."
-  },
-  {
-  question: "¿Cómo funciona EstudIA?",
-  answer: "EstudIA utiliza tecnología OCR para digitalizar tus notas escritas a mano, y luego aplica IA para crear resúmenes, responder preguntas y ayudarte a estudiar de manera más eficiente."
-  },
-  {
-    question: "¿Es gratis?",
-  answer: "EstudIA ofrece una versión gratuita con funcionalidades básicas. También hay un plan premium con características avanzadas desde S/ 19.90 al mes (plan anual) o S/ 26.90 al mes (plan mensual)."
-  },
-  {
-    question: "¿Cuál es el valor?",
-  answer: "El plan premium de EstudIA cuesta S/ 26.90 por mes (facturado mensualmente) o S/ 19.90 por mes (facturado anualmente con 25% de descuento). Incluye acceso completo a todas las funcionalidades de la aplicación."
+    question: "¿Es gratis? ¿Cuál es el valor?",
+    answer: "EstudIA ofrece 3 meses completamente gratis con todas las funciones premium. Después puedes continuar con el plan premium por S/ 7.40 al mes (~2 USD) o usar la versión básica gratuita con funcionalidades limitadas."
   },
   {
     question: "¿Necesitas internet para usarlo?",
-  answer: "Algunas funciones de EstudIA requieren conexión a internet, especialmente las relacionadas con IA y sincronización en la nube."
+    answer: "Algunas funciones de EstudIA requieren conexión a internet, especialmente las relacionadas con IA y sincronización en la nube."
   },
   {
-  question: "¿Qué productos de EstudIA tienen la inteligencia de la aplicación EstudIA?",
-  answer: "Todos los cuadernos EstudIA compatibles vienen con acceso a la aplicación EstudIA y sus funcionalidades de inteligencia artificial."
+    question: "¿Qué productos de EstudIA tienen la inteligencia de la aplicación EstudIA?",
+    answer: "Todos los cuadernos EstudIA compatibles vienen con acceso a la aplicación EstudIA y sus funcionalidades de inteligencia artificial."
   },
   {
     question: "¿Cómo funciona el reposicionamiento de las hojas?",
     answer: "El sistema permite reorganizar digitalmente las páginas de tu cuaderno, manteniendo la sincronización entre la versión física y digital."
-  },
-  {
-    question: "¿Cómo funciona el código QR?",
-    answer: "Cada página del cuaderno tiene un código QR único que permite la sincronización automática con la aplicación móvil."
   }
 ]
 

@@ -9,50 +9,50 @@ export default function ProductsAndPricingSection() {
   const notebooks = [
     {
       id: 1,
-      name: "Yale Classic",
-  image: "/img/Screen-Display.svg",
+      name: "College Xteen",
+      image: "/img/Screen-Display.svg",
       color: "bg-blue-900"
     },
     {
       id: 2,
-      name: "Magic Gradient",
-  image: "/img/Screen-Display.svg",
+      name: "Minerva Block",
+      image: "/img/Screen-Display.svg",
       color: "bg-gradient-to-br from-cyan-400 to-pink-500"
     },
     {
       id: 3,
-      name: "Harry Potter",
-  image: "/img/Screen-Display.svg",
+      name: "Anillados Minerva",
+      image: "/img/Screen-Display.svg",
       color: "bg-black"
     },
     {
       id: 4,
-      name: "Hello Kitty",
-  image: "/img/Screen-Display.svg",
+      name: "Cuaderno Escolar",
+      image: "/img/Screen-Display.svg",
       color: "bg-pink-200"
     },
     {
       id: 5,
-      name: "Unicorn Dreams",
-  image: "/img/Screen-Display.svg",
+      name: "Cuaderno Universitario",
+      image: "/img/Screen-Display.svg",
       color: "bg-gradient-to-br from-purple-400 to-pink-400"
     },
     {
       id: 6,
-      name: "Floral Liberty",
-  image: "/img/Screen-Display.svg",
+      name: "Cuaderno Profesional",
+      image: "/img/Screen-Display.svg",
       color: "bg-gradient-to-br from-green-400 to-pink-400"
     },
     {
       id: 7,
-      name: "Space Adventure",
-  image: "/img/Screen-Display.svg",
+      name: "Cuaderno Premium",
+      image: "/img/Screen-Display.svg",
       color: "bg-black"
     },
     {
       id: 8,
-      name: "Disney Collection",
-  image: "/img/Screen-Display.svg",
+      name: "Cuaderno Deluxe",
+      image: "/img/Screen-Display.svg",
       color: "bg-gradient-to-br from-blue-500 to-purple-600"
     }
   ]
@@ -65,14 +65,17 @@ export default function ProductsAndPricingSection() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content - Quiz Video */}
             <div className="relative">
-              <video
-                src="/videos/Quiz.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-80 h-[600px] mx-auto object-contain"
-              />
+              <div className="video-fade-up video-breath">
+                <video
+                  src="/videos/Quiz.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-80 h-[600px] mx-auto object-contain transition-all duration-500 hover:scale-105 hover:drop-shadow-2xl"
+                  style={{ animationDelay: '0.1s' }}
+                />
+              </div>
             </div>
 
             {/* Right Content */}
@@ -102,51 +105,6 @@ export default function ProductsAndPricingSection() {
         </div>
       </section>
 
-      {/* Products Section */}
-      <section id="buy-notebooks" className="py-20 bg-janda-yellow">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-janda-navy mb-6">
-              DÓNDE COMPRAR
-            </h2>
-            <p className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed">
-              Con el Cuaderno Digital EstudIA, tus notas se convierten en 
-              un poderoso recurso de aprendizaje, accesible en cualquier 
-              momento y en cualquier lugar.
-            </p>
-          </div>
-
-          {/* Notebooks Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            {notebooks.map((notebook) => (
-              <div key={notebook.id} className="group cursor-pointer">
-                <div className="bg-white rounded-2xl p-4 shadow-lg hover:shadow-xl transition-shadow">
-                  <div className={`${notebook.color} rounded-xl h-48 mb-4 relative overflow-hidden`}>
-                    <Image
-                      src={notebook.image}
-                      alt={notebook.name}
-                      fill
-                      className="object-cover rounded-xl group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <p className="text-center font-semibold text-gray-900">{notebook.name}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* App Store Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#" className="inline-block">
-              <img src="/img/Play Store.svg" alt="Disponible en Google Play" className="h-14 hover:opacity-80 transition-opacity" />
-            </a>
-            <a href="#" className="inline-block">
-              <img src="/img/App Store.svg" alt="Disponible en App Store" className="h-14 hover:opacity-80 transition-opacity" />
-            </a>
-          </div>
-        </div>
-      </section>
-
       {/* Pricing Section */}
       <section id="plans" className="py-20 bg-white">
         <div className="container mx-auto px-6">
@@ -158,6 +116,21 @@ export default function ProductsAndPricingSection() {
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               Aprovecha estas funciones en la aplicación EstudIA
             </p>
+            
+            {/* Promotional Comment */}
+            <div className="bg-janda-yellow/20 border-2 border-janda-yellow rounded-xl p-6 max-w-2xl mx-auto mb-8">
+              <p className="text-lg text-gray-800 font-semibold">
+                <span className="text-janda-navy">🎉 ¡Oferta de lanzamiento!</span> 
+              </p>
+              <p className="text-base text-gray-700 mt-2">
+                • 3 meses GRATIS con todas las funciones premium<br/>
+                • Después solo S/ 7.40/mes (~2 USD)<br/>
+                • Si no continúas, automáticamente pasas a la versión básica gratuita
+              </p>
+              <p className="text-sm text-gray-600 mt-3 italic">
+                Sin compromisos. Sin pagos automáticos después del periodo gratuito.
+              </p>
+            </div>
             
             {/* Plan Toggle */}
             <div className="flex justify-center mb-12">
@@ -246,16 +219,19 @@ export default function ProductsAndPricingSection() {
                 <div className="text-4xl font-bold text-gray-900 mb-4">
                   {isAnnual ? (
                     <>
-                      S/ 19.90
+                      S/ 6.50
                       <span className="text-lg text-gray-600">/mes</span>
                       <div className="text-sm text-green-600 font-medium">
-                        S/ 238.80/año (¡Ahorra 25%!)
+                        S/ 78.00/año (¡Ahorra 25%!)
                       </div>
                     </>
                   ) : (
                     <>
-                      S/ 26.90
+                      S/ 7.40
                       <span className="text-lg text-gray-600">/mes</span>
+                      <div className="text-sm text-gray-500">
+                        (~2 USD al tipo de cambio)
+                      </div>
                     </>
                   )}
                 </div>

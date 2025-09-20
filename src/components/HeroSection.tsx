@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="relative w-full bg-transparent overflow-hidden">
       <div className="w-full flex flex-col items-center justify-start">
         <Image
-          src="/img/Screen-Display.svg"
+          src="/img/Screen-Display.png"
           alt="Fondo EstudIA"
           width={1920}
           height={1080}

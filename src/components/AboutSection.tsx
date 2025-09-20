@@ -20,7 +20,7 @@ export default function AboutSection() {
               />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-janda-orange text-white px-4 py-2 rounded-full font-semibold text-sm">
-              Powered by MagicBook
+              Powered by EstudIA
             </div>
           </div>
 
@@ -43,25 +43,23 @@ export default function AboutSection() {
             </div>
 
             <div className="space-y-6 text-lg leading-relaxed">
-              <p className="font-semibold text-janda-yellow text-xl">
-                Mucho más que un cuaderno digital. Su compañero de estudio.
-              </p>
-              
               <p className="text-gray-200">
-                El Cuaderno Digital EstudIA con Inteligencia Artificial es la evolución del estudio. 
-                Combinando la practicidad de la escritura tradicional con el poder de la tecnología, 
-                transforma sus notas en un entorno interactivo e inteligente.
+                Tu tutor EstudIA representa la evolución del aprendizaje combinando la practicidad de la escritura 
+                tradicional con el poder de la tecnología; transforma sus notas en un entorno interactivo e inteligente.
               </p>
 
               <p className="text-gray-200">
-                <strong className="text-janda-cyan">Organiza tus ideas, accede a información relevante, revisa el contenido 
-                de manera eficiente y personaliza tu aprendizaje según tus necesidades.</strong>
+                <strong className="text-janda-cyan">Organiza tus ideas, accede a información relevante, 
+                revisa el contenido de manera eficiente y personaliza 
+                tu aprendizaje según tus necesidades.</strong>
               </p>
 
               <p className="text-gray-200">
-                Con EstudIA, el futuro del estudio está al alcance de tu mano, abriendo un mundo de 
-                posibilidades para mejorar tus conocimientos y alcanzar tus metas académicas. Todo de 
-                forma rápida e inteligente. <span className="text-janda-yellow font-semibold">Notas perfectas, resultados brillantes.</span>
+                Con EstudIA, el futuro del estudio está al alcance de 
+                tu mano, abriendo un mundo de posibilidades para 
+                mejorar tus conocimientos y alcanzar tus metas. Todo 
+                de forma rápida e inteligente. <span className="text-janda-yellow font-semibold">Escribe como siempre 
+                con resultados brillantes.</span>
               </p>
             </div>
 
