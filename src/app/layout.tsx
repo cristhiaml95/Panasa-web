@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'EstudIA - Tu parceiro de estudos con IA',
+  title: 'EstudIA - Tu compañero de estudios con IA',
   description: 'Muy más que un cuaderno digital. Tu parceiro de estudos con inteligencia artificial.',
   icons: {
     icon: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     apple: '/img/logoBlanco.png',
   },
   openGraph: {
-    title: 'EstudIA - Tu parceiro de estudos con IA',
+    title: 'EstudIA - Tu compañero de estudios con IA',
     description: 'Muy más que un cuaderno digital. Tu parceiro de estudos con inteligencia artificial.',
     images: ['/img/logoBlanco.png'],
   },

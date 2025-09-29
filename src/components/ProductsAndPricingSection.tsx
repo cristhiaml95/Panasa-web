@@ -93,10 +93,10 @@ export default function ProductsAndPricingSection() {
               
               {/* App Store Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#" className="inline-block">
+                <a href="https://play.google.com/store/apps/details?id=com.estudia&hl=es" target="_blank" rel="noopener noreferrer" className="inline-block">
                   <img src="/img/Play Store.svg" alt="Disponible en Google Play" className="h-14 hover:opacity-80 transition-opacity" />
                 </a>
-                <a href="#" className="inline-block">
+                <a href="https://apps.apple.com/us/app/estudia/id6751822145" target="_blank" rel="noopener noreferrer" className="inline-block">
                   <img src="/img/App Store.svg" alt="Disponible en App Store" className="h-14 hover:opacity-80 transition-opacity" />
                 </a>
               </div>

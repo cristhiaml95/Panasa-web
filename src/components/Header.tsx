@@ -56,7 +56,7 @@ export default function Header() {
             </Link>
           </nav>
           <div className="flex items-center gap-2">
-            <Link href="#" className="block" aria-label="Play Store">
+            <Link href="https://play.google.com/store/apps/details?id=com.estudia&hl=es" target="_blank" rel="noopener noreferrer" className="block" aria-label="Play Store">
               <img
                 src="/img/Play Store.svg"
                 alt="Play Store"
@@ -64,7 +64,7 @@ export default function Header() {
                 style={{ minWidth: 90 }}
               />
             </Link>
-            <Link href="#" className="block" aria-label="App Store">
+            <Link href="https://apps.apple.com/us/app/estudia/id6751822145" target="_blank" rel="noopener noreferrer" className="block" aria-label="App Store">
               <img
                 src="/img/App Store.svg"
                 alt="App Store"

@@ -10,13 +10,13 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content - Notebook Image */}
           <div className="relative">
-            <div className="bg-white rounded-3xl p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+            <div className="bg-white rounded-3xl p-4 md:p-8 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
               <Image
                 src="/img/Screen-Display.svg"
                 alt="Cuaderno Digital EstudIA"
                 width={400}
                 height={500}
-                className="w-full h-[500px] object-cover rounded-2xl"
+                className="w-full h-auto max-h-[400px] md:max-h-[500px] object-contain rounded-2xl"
               />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-janda-orange text-white px-4 py-2 rounded-full font-semibold text-sm">
@@ -65,10 +65,10 @@ export default function AboutSection() {
 
             {/* App Store Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
-              <Link href="#" className="inline-block">
+              <Link href="https://play.google.com/store/apps/details?id=com.estudia&hl=es" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <img src="/img/Play Store.svg" alt="Disponible en Google Play" className="h-14 hover:opacity-80 transition-opacity" />
               </Link>
-              <Link href="#" className="inline-block">
+              <Link href="https://apps.apple.com/us/app/estudia/id6751822145" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <img src="/img/App Store.svg" alt="Disponible en App Store" className="h-14 hover:opacity-80 transition-opacity" />
               </Link>
             </div>

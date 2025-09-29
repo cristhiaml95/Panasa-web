@@ -45,20 +45,9 @@ export default function HowItWorksSection() {
         {/* Text Content Section - Abajo */}
         <div className="max-w-4xl mx-auto space-y-12">
           <div>
-            <h4 className="text-2xl font-bold text-janda-cyan mb-6 text-center">Aplicación EstudIA:</h4>
+            <h4 className="text-3xl font-bold text-janda-navy mb-6 text-center">¿CÓMO FUNCIONA?</h4>
             <p className="text-lg text-gray-700 leading-relaxed text-center">
-              La aplicación, disponible para dispositivos móviles, es el centro de control de su cuaderno digital. 
-              Organiza tus notas, te permite buscar palabras clave, ofrece funciones de edición y formato, e integra 
-              herramientas de inteligencia artificial para mejorar tu aprendizaje.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="text-2xl font-bold text-janda-cyan mb-6 text-center">Inteligencia artificial:</h4>
-            <p className="text-lg text-gray-700 leading-relaxed text-center">
-              La IA de EstudIA aprende de tus hábitos de estudio, personalizando el contenido y las sugerencias 
-              para optimizar tu aprendizaje. Puede generar resúmenes automáticos, crear tarjetas interactivas, 
-              identificar conceptos importantes e incluso responder preguntas sobre sus notas.
+              La aplicación totalmente integrada incluye una Tutoría inteligente con procesamiento Digital.
             </p>
           </div>
         </div>

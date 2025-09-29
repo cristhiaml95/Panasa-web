@@ -77,9 +77,9 @@ export default function FeaturesSection() {
                   ¡Haz una pregunta, obtén una respuesta instantánea!
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  EstudIA responde sobre una variedad de temas, que incluyen matemáticas, química, física, geografía, 
+                  Novi responde sobre una variedad de temas, que incluyen matemáticas, química, física, geografía, 
                   historia, inglés y más. ¡Ahora, incluso puedes hacer preguntas a través del audio! ¡Habla conmigo y 
-                  descubre el poder de la **innovación** de EstudIA!
+                  descubre el poder de la tecnología de EstudIA!
                 </p>
               </div>
             </div>
